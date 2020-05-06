@@ -1,15 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Activity 3" />
+    <!--Blue area    -->
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#f9b100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"/>
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="80dp"
+            android:src="@drawable/ic_profile"
+            android:layout_centerInParent="true"
+            android:layout_height="80dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="CS KonKhmer"
+            android:id="@+id/txt_name"
+            android:layout_below="@id/img_profile"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_below="@id/txt_name"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cskk168@gmail.com"
+            android:textColor="#fff"
+    </RelativeLayout>
 
-</RelativeLayout>
+    <!--White area   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        </LinearLayout>
+
+</LinearLayout>
